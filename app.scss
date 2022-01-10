@@ -1,0 +1,535 @@
+a, a:hover {
+  color: rgba(214, 212, 212, 0.88);
+  text-decoration: none
+
+}
+
+$text-color: #000000;
+$font-stack: "Poppins", sans-serif;
+$font-stack-inter: Inter;
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css");
+
+%desc{
+  width: 200px;
+  height: 54px;
+  font-family: $font-stack;
+  font-size: 12px;
+  text-align: center;
+  line-height: 18px;
+  color: $text-color
+
+
+}
+
+
+%navs {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px
+}
+
+%btn {
+  width: 160px;
+  height: 48px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: $font-stack;
+  margin-bottom: 20px;
+}
+
+%img-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: $font-stack;
+  color: $text-color;
+}
+
+%img-desc {
+  width: 252px;
+  height: 72px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  font-family: $font-stack;
+  color: $text-color;
+}
+
+%title{
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: $text-color;
+  font-family: $font-stack;
+}
+
+%subtitle{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: $text_color;
+  font-family: $font-stack;
+}
+
+%line{
+  width: 343px;
+  height: 4px;
+  background: #B00000;
+}
+
+
+body {
+  font-family: $font-stack;
+  color: $text-color;
+}
+
+%box{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  font-family: $font-stack;
+}
+
+%border{
+ width: 300px;
+  height: 650px;
+  background: #FFFFFF;
+  border: 1.5px solid #C4C4C4;
+  border-radius: 15px;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+%number{
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 32px;
+  color: #000000;
+  font-family: $font-stack;
+}
+%btn{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+  width: 235px;
+  height: 50px;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+
+
+//HEADER
+#header {
+  width: 100%;
+  padding-top: 30px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+      margin-right: 105px;
+
+      &--desc {
+        color: $text-color;
+        font-family: $font-stack;
+        @extend %navs;
+
+      }
+
+      &--line {
+        position: absolute;
+        width: 80px;
+        height: 3px;
+        background: #B00000;
+        border-radius: 10px;
+        margin-left: 20px;
+        border: none;
+
+
+      }
+
+    }
+
+    &__nav {
+      margin-right: 50px;
+
+      &--item {
+        font-family: $font-stack;
+        color: $text-color;
+        @extend %navs;
+        margin: 0 10px;
+      }
+
+    }
+
+    &__navbar {
+      display: flex;
+
+      &--logo {
+        font-family: $font-stack;
+        color: $text-color;
+        @extend %navs;
+      }
+
+      &--line {
+        width: 1px;
+        height: 19px;
+        background: #e10808;
+        margin: 0 10px;
+      }
+
+      &--img {
+        margin: 0 20px;
+      }
+    }
+
+
+  }
+}
+
+//HEADER
+
+//HERO
+#hero {
+  padding-top: 70px;
+
+  .hosting {
+
+    &__d-flex {
+      &--logo {
+        font-family: $font-stack;
+        color: #B00000;
+        @extend %navs
+      }
+
+      &--logos {
+        font-family: $font-stack;
+        margin: 0 20px;
+        @extend %navs
+      }
+
+      &--logos:hover {
+        color: #e10808;
+      }
+    }
+
+    &__title {
+      font-family: $font-stack;
+      font-size: 64px;
+      line-height: 77px;
+      color: #2E2E2E;
+      margin: 20px 0;
+    }
+
+    &__sub-title {
+      font-family: $font-stack-inter;
+      font-size: 16px;
+      line-height: 28px;
+      width: 448px;
+      letter-spacing: 0.05em;
+      color: #808080;
+      margin: 15px 0;
+    }
+
+    &__btn1 {
+      @extend %btn;
+      border: none;
+      background: #B00000;
+      box-shadow: 0 0 64px rgba(176, 0, 0, 0.3);
+      border-radius: 8px;
+      color: floralwhite;
+    }
+
+    &__btn2 {
+      @extend %btn;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      color: $font-stack;
+      border-radius: 8px;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 70px 30px;
+
+
+    }
+
+  }
+
+  .imag {
+    width: 100%;
+
+    &__img {
+      width: 550px;
+      height: 514px;
+      margin-left: 20px;
+    }
+
+
+  }
+
+}
+
+/*HERO*/
+
+//TITLE
+#title {
+
+  .card-hero {
+    &__card-title {
+      font-family: $font-stack-inter;
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 64px;
+      font-feature-settings: 'salt' on, 'liga' off;
+      color: #18191F;
+      width: 594px;
+      height: 64px;
+    }
+
+    &__card-subtitle {
+      font-family: $font-stack-inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px;
+      font-feature-settings: 'salt' on, 'liga' off;
+      color: #18191F;
+      width: 500px;
+      height: 224px;
+    }
+  }
+
+  .images {
+    padding-top: 20px;
+
+    &__col-img1 {
+      position: absolute;
+      width: 140.71px;
+      height: 30px;
+      margin-left: 70px;
+
+    }
+
+    &__col-img2 {
+      width: 125.42px;
+      height: 50px;
+      margin-left: 80px;
+    }
+
+    &__col-img3 {
+      width: 125px;
+      height: 53.53px;
+      margin-left: 90px;
+    }
+
+    &__col-img4 {
+      margin-left: 50px;
+      width: 172px;
+      height: 92px;
+    }
+
+    &__col-img5 {
+      margin-left: 50px;
+      width: 168px;
+      height: 56px;
+    }
+
+    &__col-img6 {
+      margin-left: 120px;
+      width: 143px;
+      height: 47px;
+    }
+
+  }
+
+  .d-flex {
+    &__logos {
+      margin: 0 15px;
+
+      &--img4 {
+        margin-left: 70px;
+      }
+
+      &--title {
+        @extend %img-title;
+        text-align: center;
+      }
+
+      &--desc {
+        @extend %img-desc;
+      }
+
+
+    }
+  }
+
+
+}
+
+//TITLE
+
+//FEATURES
+#features {
+  padding-top: 60px;
+  .features-title{
+    width: 650px;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    font-family: $font-stack;
+    color: $text-color;
+    text-align: center;
+    margin-left: 150px;
+  }
+
+  .features-subtitle {
+   @extend %title
+  }
+
+  .subject{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 40px;
+    margin: 0 50px;
+    &__title{
+      @extend %title;
+      margin: 0 15px;
+
+    }
+    &__img{
+      width: 93px;
+      height: 50px;
+      background: #B00000;
+      border-radius: 73px;
+      position: absolute;
+      padding-left: 10px;
+
+    }
+    &__img1{
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      margin-left: 20px;
+      margin-top: 5px;
+
+    }
+
+
+    }
+
+  .logos{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+
+    &__logo{
+      &--subtitle{
+        @extend %subtitle;
+        margin: 0 80px;
+      }
+      &--line{
+        @extend %line;
+
+      }
+      &--line1{
+        @extend %line;
+        background: #C4C4C4;
+        }
+      &--line1:hover{
+        color: #B00000;
+      }
+    }
+
+  }
+.box-logo{
+  width: 130px;
+  height: 34px;
+  background: #FFE87A;
+  border-radius: 8px;
+}
+}
+#Basic,#Premium{
+  opacity: 0;
+}
+.box-names{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.box-name{
+  @extend %box;
+  margin: 0 40px;
+}
+
+.box-name:active{
+  font-weight: 900;
+ color: #B00000;
+}
+
+.content{
+  display: flex;
+  justify-content: space-around;
+
+}
+#Premium:checked ~ .content1{
+  display: none;
+}
+#Premium:checked ~ .content2{
+  display: flex;
+}
+.content2{
+  display: none;
+}
+.col-4 {width: 23%;
+  @extend %border;
+
+}
+.box-title{
+  @extend %box;
+  margin-top: 30px;
+}
+
+.box-desc{
+  @extend %desc;
+}
+.box-number{
+  @extend %number;
+  text-align: center;
+}
+.btns{
+  @extend %btn;
+  text-align: center;
+}
+.d-flex{
+  margin: 3px 15px;
+}
+.bar{
+  font-family:$font-stack-inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #808080;
+  margin-left: 15px;
+}
+
+
+//FEATURES
